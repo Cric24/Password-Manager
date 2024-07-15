@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('/static/pexels-eberhardgross-1612351.jpg') center/cover no-repeat;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200vh;
+    position: relative;
+    color: #ffffff; /* Ensure text is white by default */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5); /* Increased opacity for better readability */
+    backdrop-filter: blur(10px); /* Reduced blur for a cleaner look */
+    z-index: -1;
+}
+
+h1 {
+    margin-top: -50px;
+    color: #ffffff;
+    font-weight: 700; /* Increased font-weight for better visibility */
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Darker text shadow for better readability */
+    text-align: center; /* Center align the heading */
+    font-size: 3rem; /* Increased font size */
+    letter-spacing: 1.5px; /* Added letter spacing */
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Card Styles */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow for a floating effect */
+    backdrop-filter: blur(15px); /* Added blur effect to card background */
+    color: #ffffff; /* Ensure text inside the card is white */
+    padding: 20px; /* Added padding inside the card */
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ffffff; /* Ensure card titles are white */
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+.btn {
+    margin-top: 40px;
+    margin-left: 137px;
+    width: 40%;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    color: #ffffff; /* Ensure button text is white */
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+/* Form Control Styles */
+.form-control {
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    color: #000000; /* Ensure form text is black */
+}
+
+.form-control:focus {
+    box-shadow: 0 0 10px rgba(128, 189, 255, 0.5); /* Added focus shadow */
+    border-color: #80bdff;
+}
+
+/* Alert Styles */
+.alert {
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    color: #000000; /* Ensure alert text is black */
+}
+
+.mt-3 {
+    margin-top: 1rem !important;
+}
+
+.mt-5 {
+    margin-top: 3rem !important;
+}
+
+.shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
